@@ -93,20 +93,7 @@ export const getAllPayments = async (req, res) => {
 };
 
 
-// export const getPackingRequests = async (req, res) => {
-//   try {
-//     const requests = await Notification.find({ type: "packing" })
-//       .populate("user", "name email")
-//       .sort({ createdAt: -1 });
 
-//     res.json(requests);
-
-//   } catch (err) {
-//     res.status(500).json({ message: err.message });
-//   }
-// };
-
-// GET packing requests
 export const getPackingRequests = async (req, res) => {
   try {
     const notification = await Notification.find()
