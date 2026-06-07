@@ -1,15 +1,3 @@
-// import express from "express";
-// import { getDashboardStats, getEarnings, getPackingRequests, toggleUserStatus } from "../controllers/adminController.js";
-// import protect from "../middleware/authMiddleware.js";
-
-// const router = express.Router();
-
-// router.get("/stats",protect, getDashboardStats);
-// router.get("/earnings", protect, getEarnings);
-// router.get("/packing-requests", protect, getPackingRequests);
-// router.put("/user/:id", protect, toggleUserStatus);
-
-// export default router;
 import express from "express";
 import protect from "../middleware/authMiddleware.js";
 import isOwner from "../middleware/ownerMiddleware.js";
