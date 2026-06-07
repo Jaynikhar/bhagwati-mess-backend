@@ -44,18 +44,3 @@ export const getMySubscription = async (req, res) => {
     res.status(500).json({ message: "Server error" });
   }
 };
-
-// export const getMySubscription = async (req, res) => {
-//   try {
-//     const sub = await Subscription.findOne({ user: req.user.id });
-//     res.json(sub);
-//   } catch (error) {
-//     res.status(500).json({ message: "Server error" });
-//   }
-// };
-
-
- // await Notification.create({
-    //   message: `${req.user.username} ordered ${mealType} meal`,
-    //   user: req.user._id
-    // });
