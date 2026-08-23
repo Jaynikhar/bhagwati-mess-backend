@@ -6,7 +6,7 @@ import { createOrder, getMyOrders } from "../controllers/orderController.js";
 
 const router = express.Router();
 
-console.log("✅ Order routes loaded");
+console.log(" Order routes loaded");
 
 router.post("/create", protect, createOrder);
 router.get("/my", protect, getMyOrders);
@@ -14,7 +14,7 @@ router.get("/my", protect, getMyOrders);
 
 
 router.get("/test", (req, res) => {
-  res.send("Order route working ✅");
+  res.send("Order route working ");
 });
 
 
