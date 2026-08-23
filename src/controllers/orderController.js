@@ -37,10 +37,3 @@ export const getMyOrders = async (req, res) => {
   }
 };
 
-// await Notification.create({
-    //   message: `${req.user.username} ordered ${mealType} meal`,
-    //   user: req.user._id
-    // });
-
-
-
